@@ -1,0 +1,11 @@
+<h2> Exercises overview </h2>
+
+<ul> <% @exercises.each do |x| %>
+    <li><a href="/exercises/<%=x.id%>"><%= x.name %></a>
+    <%end%></li>
+  </ul>
+
+
+
+
+
