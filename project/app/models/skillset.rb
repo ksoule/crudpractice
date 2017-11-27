@@ -1,5 +1,5 @@
 class Skillset < ApplicationRecord
-  has_many :works
-  has_and_belongs_to_many :exercises, through: "works"
+  has_many :skills
+  has_many :exercises
 
 end
