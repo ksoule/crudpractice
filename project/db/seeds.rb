@@ -1,10 +1,9 @@
 Participant.destroy_all
 Exercise.destroy_all
-Work.destroy_all
 Skillset.destroy_all
+Skill.destroy_all
 
-Skillset.create!(
-
+Skill.create!(
   name: "group_dynamics",
   description: "Illustrates the different dynamics in play among people working in a group")
 
@@ -19,11 +18,9 @@ Exercise.create!(
   notes: "players should not feel insulted as they wrote the list themselves.", participant_id: "1"
   )
 
-Schedule.create!
-
-Work.create!(
+Skillset.create!(
   exercise_id: "1",
-  skillset_id: "1"
+  skill_id: "1"
   )
 
 Workshop.create!(
