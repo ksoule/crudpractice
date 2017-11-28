@@ -1,0 +1,6 @@
+<h3> Group sizes </h3>
+
+<ul> <% @participants.each do |x| %>
+    <li><a href="/participants/<%=x.id%>"><%= x.name %></a>
+    <%end%></li>
+  </ul>
