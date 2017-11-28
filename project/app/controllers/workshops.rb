@@ -11,14 +11,14 @@ end
 
 post "/workshops" do
   @workshop = Workshop.create!(params)
-  if request.xhr?
-    # "/workshops"
-    # <li><a href="/workshops/<%=x.id%>"><%= x.name %></a></li>
-    "<li><a href=\"/workshops/#{@workshop.id}\">#{@workshop.name}</a></li>"
-    #erb :"/workshops/show"
-  else
+  # if request.xhr?
+  #   # "/workshops"
+  #   # <li><a href="/workshops/<%=x.id%>"><%= x.name %></a></li>
+  #   "<li><a href=\"/workshops/#{@workshop.id}\">#{@workshop.name}</a></li>"
+  #   #erb :"/workshops/show"
+  # else
     redirect :"/"
-  end
+  # end
 end
 
 #read
