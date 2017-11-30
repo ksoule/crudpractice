@@ -3,33 +3,33 @@ get "/participants" do
   erb :"participant/index"
 end
 
-GET '/participants/new' do
+get '/participants/new' do
 
   erb :"/participants/new"
 end
 
-POST  '/participants' do
+post '/participants' do
   @participants = Participant.create!(params)
   redirect :"participant/index"
 
 end
 
-GET '/participants/:id' do
+get '/participants/:id' do
 
   erb :"/participants/show"
 end
 
-GET '/participants/:id/edit' do
+get '/participants/:id/edit' do
     @participant = Participant.find(params[:id])
    erb:"/participants/edit"
 end
 
-PUT '/participants/:id' do
+put '/participants/:id' do
 
 
 end
 
-DELETE  '/participants/:id' do
+delete '/participants/:id' do
   @participant = Participant.find(params[:id])
   @participant.delete
 end

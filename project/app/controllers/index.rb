@@ -1,6 +1,6 @@
 get '/' do
   @workshops = Workshop.all
   @exercises = Exercise.all
-  @skillsets = Skillset.all
+  @skills = Skill.all
   erb :'/index'
 end

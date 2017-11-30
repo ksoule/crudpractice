@@ -1,1 +1,20 @@
-<p>Edit form</p>
+<p>Exercise Edits</p>
+<!-- each attribute is separated into it's own text box. Pre-populated with the original text. Skills are dropdowns with radio buttons to select each one it works.-->
+
+<form method="put" action="/exercises">
+  <label for="name">Title:</label>
+  <input id="name" name="name" type="text" placeholder="<%=@exercise.name%>">
+
+  <label for="description">description:</label>
+  <input id="textarea" name="description" type="text" placeholder="<%=@exercise.description%>">
+
+  <label for="source">source:</label>
+  <input id="text" name="source" type="text" placeholder="<%=@exercise.source%>">
+
+  <label for="notes">notes:</label><input id="textarea" name="notes" type="text" placeholder="<%=@exercise.notes%>">
+
+  <!-- <label for="participant_id">participants needed:</label><input id="radio" name="participant_id" type="text"> -->
+<!-- ^^ needs to be a drop down of all participant options same for skills-->
+  <input type="submit" value="Submit" tabindex="3" class="block button">
+</form>
+
