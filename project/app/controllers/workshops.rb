@@ -27,5 +27,8 @@ get "/workshops/:id" do
   erb :"workshops/show"
 end
 
-#update
+put "/workshops/:id" do
+
+
+end
 #destroy
