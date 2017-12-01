@@ -1,1 +1,6 @@
-<p>all skills</p>
+<p>Skills</p>
+
+<ul> <% @skills.each do |x| %>
+    <li><a href="/skills/<%=x.id%>"><%= x.name %></a>
+    <%end%></li>
+  </ul>

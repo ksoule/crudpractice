@@ -1,7 +1,8 @@
 <p>Exercise Edits</p>
 <!-- each attribute is separated into it's own text box. Pre-populated with the original text. Skills are dropdowns with radio buttons to select each one it works.-->
 
-<form method="put" action="/exercises">
+<form method="post" action="/exercises">
+  <input type="hidden" name="_method" value="put" />
   <label for="name">Title:</label>
   <input id="name" name="name" type="text" placeholder="<%=@exercise.name%>">
 
