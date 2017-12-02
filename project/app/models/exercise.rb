@@ -4,3 +4,9 @@ class Exercise < ApplicationRecord
   has_and_belongs_to_many :workshops, through: "schedules"
 
 end
+
+def add_skill_set(skills)
+  skills.each do |skill|
+    Skillset.create!(self.id, skill.id)
+  end
+end
