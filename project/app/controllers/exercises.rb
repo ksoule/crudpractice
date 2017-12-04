@@ -22,6 +22,8 @@ end
 
 get "exercises/:id/edit" do
   @exercise = Exercise.find(params[:id])
+  @participants = Participant.all
+  @skills = skill.all
   erb :"exercises/edit"
 end
 
