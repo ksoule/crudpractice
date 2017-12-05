@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem "bcrypt"
-gem "extra_print"
+gem 'bcrypt'
+gem 'extra_print'
 # PostgreSQL driver
 gem 'pg'
 
@@ -9,18 +9,18 @@ gem 'pg'
 gem 'sinatra', '~> 1.0'
 gem 'sinatra-contrib'
 
-gem 'activesupport', '~>5.1.0'
 gem 'activerecord', '~>5.1.0'
+gem 'activesupport', '~>5.1.0'
 
 gem 'rake'
 
 gem 'shotgun', '~>0.9.1'
 
 group :test do
-  gem 'shoulda-matchers'
+  gem 'capybara'
   gem 'rack-test'
   gem 'rspec', '~>3.0'
-  gem 'capybara'
+  gem 'shoulda-matchers'
 end
 
 group :test, :development do

@@ -1,15 +1,14 @@
-get "/workshops" do
+get '/workshops' do
   @workshops = Workshop.all
   erb :"workshops/index"
 end
 
-#create
-get "/workshops/new" do
-
+# create
+get '/workshops/new' do
   erb :"workshops/new"
 end
 
-post "/workshops" do
+post '/workshops' do
   @workshop = Workshop.create!(params)
   # if request.xhr?
   #   # "/workshops"
@@ -17,18 +16,16 @@ post "/workshops" do
   #   "<li><a href=\"/workshops/#{@workshop.id}\">#{@workshop.name}</a></li>"
   #   #erb :"/workshops/show"
   # else
-    redirect :"/"
+  redirect :"/"
   # end
 end
 
-#read
-get "/workshops/:id" do
+# read
+get '/workshops/:id' do
   @workshop = Workshop.find(params[:id])
   erb :"workshops/show"
 end
 
-put "/workshops/:id" do
-
-
+put '/workshops/:id' do
 end
-#destroy
+# destroy
