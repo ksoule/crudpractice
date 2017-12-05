@@ -1,10 +1,10 @@
 <h3><%= @exercise.name %></h3>
 <ul>
-  <li> <%= @exercise.description %> </li>
-  <li> <%= @exercise.source %> </li>
-  <li> <%= @exercise.notes %> </li>
-  <li> <%= @exercise.participant_id.description %> </li>
+    <li><%= @exercise.description %></li>
+    <li> <%= @exercise.source %> </li>
+    <li> <%= @exercise.notes %> </li>
 </ul>
+
 <p> Skill sets </p>
   <ul> <%=@skillsets.each do |skill|%>
     <li> <%=skill.name%>

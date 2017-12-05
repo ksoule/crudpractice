@@ -8,4 +8,8 @@ def add_skill_set(skills)
   skills.each do |skill|
     Skillset.create!(id, skill.id)
   end
+
+  def exercise_skills
+    Skillset.all.select{|skill| skill.exercise_id == self.id}
+  end
 end

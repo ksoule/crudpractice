@@ -17,7 +17,8 @@ Exercise.create!(
   name: 'insults',
   description: 'two participants each write a series of insults on paper. They then hand it to the other person. They then do a 2 person scene with the one caveat that they must end each line with an insult from the list. The person being insulted MUST accept the insult as being true, admit it, and then continue the scene.',
   source: 'tk',
-  notes: 'players should not feel insulted as they wrote the list themselves.', participant_id: '1'
+  notes: 'players should not feel insulted as they wrote the list themselves.',
+  participant_id: '1'
 )
 
 Skillset.create!(
