@@ -16,7 +16,7 @@ end
 
 get '/exercises/:id' do
   @exercise = Exercise.find(params[:id])
-  @skillsets = @exercise.exercise_skills
+  @skills = @exercise.skills
   erb :"exercises/show"
 end
 

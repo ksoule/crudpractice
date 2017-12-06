@@ -6,7 +6,8 @@
 </ul>
 
 <p> Skill sets </p>
-  <ul> <%=@skillsets.each do |skill|%>
-    <li> <%=skill.name%>
-  <%= end %> </li>
+
+<ul> <% @skills.each do |skill| %>
+    <li><a href="/skills/<%=skill.id%>"><%= skill.name %></a>
+    <%end%></li>
   </ul>
