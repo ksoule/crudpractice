@@ -1,21 +1,6 @@
 <h2> Upcoming workshops </h2>
-<h3> Click for more information </h3>
+
   <ul> <% @workshops.each do |x| %>
     <li><a href="/workshops/<%=x.id%>"><%= x.name %></a>
     <%end%></li>
   </ul>
-
-<form id="create" method="post" action="/workshops">
-  <label for="name">Title:</label>
-  <input id="name" name="name" type="text">
-
-  <label for="date">Date:</label>
-  <input id="date" name="date" type="text">
-
-  <label for="time">Time:</label>
-  <input id="time" name="time" type="text">
-
-  <label for="location">Location:</label><input id="location" name="location" type="text">
-
-  <input type="submit" value="Submit" tabindex="3" class="block button">
-</form>

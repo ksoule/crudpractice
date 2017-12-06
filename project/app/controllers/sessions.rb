@@ -2,7 +2,6 @@
 #   erb :'sessions/new'
 # end
 
-
 # post '/sessions' do
 #   user = self.authenticate(params[:email], params[:password])
 #   if user
@@ -31,4 +30,3 @@
 #     else
 #     end
 # end
-

@@ -1,5 +1,5 @@
-Scenework
-group dynamics
-leadership
-language dev.
-storytelling
+name:'scenework'
+name:'group dynamics'
+name:'leadership'
+name:'language dev.'
+name:'storytelling'

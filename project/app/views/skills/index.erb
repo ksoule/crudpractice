@@ -1,6 +1,6 @@
 <p>Skills</p>
 
-<ul> <% @skills.each do |x| %>
-    <li><a href="/skills/<%=x.id%>"><%= x.name %></a>
+<ul> <% @skills.each do |skill| %>
+    <li><a href="/skills/<%=skill.id%>"><%= skill.name %></a>
     <%end%></li>
   </ul>

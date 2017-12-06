@@ -8,7 +8,6 @@ class CreateExercises < ActiveRecord::Migration[5.1]
       t.integer :participant_id
 
       t.timestamps
-
     end
   end
 end

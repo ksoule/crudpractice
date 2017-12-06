@@ -1,1 +1,9 @@
 <p>Edit form</p>
+
+<form method="post" action="/skills">
+  <input type="hidden" name="_method" value="put" />
+  <label for="name">Title:</label>
+  <input id="name" name="name" type="text" placeholder="<%=@skill.name%>">
+
+<label for="description">description:</label>
+  <input id="textarea" name="description" type="text" placeholder="<%=@skill.description%>">
