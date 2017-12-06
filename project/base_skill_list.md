@@ -1,15 +1,27 @@
-language development
-language usage
-listening
-body awareness
-environment/situational awareness
-spontaneity
-status
-patterns
-non-verbal communication
-non- language communication
-problem solving
-creativity
-commitment
-trance
-emotion
+{name:'language development', description: 'base language creation and experimentation'},
+{name:'language usage', description: 'exploring word choices'},
+{name:'listening', description: 'Going beyond hearing'},
+{name:'body awareness', description: "exploring the body's inner voice"},
+{name:'environment/situational awareness', description: 'opening up the senses to the external environment'},
+{name:'spontaneity', description: 'bypassing the minds natural filters'},
+{name:'status', description: 'how to affect and effect the perception of yourself and others'},
+{name:'patterns', description: 'recognizing and creating patterns'},
+{name:'non-verbal communication', description: 'body language'},
+{name:'non- language communication', description: 'using non-language vocalizations to communicate'},
+{name:'problem solving', description: 'self descriptive'},
+{name:'creativity', description: 'self descriptive'},
+{name:'commitment', description: 'creating a realistic reaction in characters'},
+{name:'trance', description: 'include mask work'},
+{name:'emotion': description: 'explore human emotions'},
+{name:'public speaking', description: 'making presentations'},
+{name:'1:1 communication', description: 'furthering understanding between individuals'},
+{name:'character', description: 'creating and embodying a character'},
+{name:'performance', description: 'stage presence and awareness'},
+{name:'multi-tasking', description: 'understanding mastery of a concept to the point where it no longer needs conscious thought'},
+{name:'empathy', description: 'understanding and sympathizing with other people'},
+{name:'scenework', description: 'creating scenes'},
+{name:'group dynamics', description: 'group mind and cooperation'},
+{name:'leadership', description: 'exploring status and responsibility in a position of power'},
+{name:'language dev.', description: 'advanced usage and creation of a working vocabulary'},
+{name:'storytelling', description: 'combining the elements of a story with public performance'}
+

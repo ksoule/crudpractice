@@ -1,6 +1,6 @@
 get '/skills' do
-  @skills = Skill.all?
-  erb 'skills/index'
+  @skills = Skill.all
+  erb :'skills/index'
 end
 
 get '/skills/new' do

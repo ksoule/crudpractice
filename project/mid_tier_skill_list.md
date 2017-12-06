@@ -1,6 +1,6 @@
-public speaking
-1:1 communication
-character
-performance
-multi-tasking
-empathy
+name:'public speaking'
+name:'1:1 communication'
+name:'character'
+name:'performance'
+name:'multi-tasking'
+name:'empathy'
