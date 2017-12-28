@@ -1,8 +1,8 @@
 <p>Exercise Edits</p>
 <!-- each attribute is separated into it's own text box. Pre-populated with the original text. Skills are dropdowns with radio buttons to select each one it works.-->
 
-<form method="post" action="/exercises">
-  <input type="hidden" name="_method" value="put" />
+<form method="post" action="/exercises/<%= @exercise.id %>">
+  <input type="hidden" name="_method" value="put" >
   <label for="name">Title:</label>
   <input id="name" name="name" type="text" placeholder="<%=@exercise.name%>">
 
@@ -32,11 +32,8 @@
       <%end%>
       </ul>
 
-
-  <input type="submit" value="Submit" tabindex="3" class="block button">
+  <input type="submit" value="Submit" class="block button">
 </form>
 
-
-<!--needs to be a drop down of all participant options same for skills-->
 
 

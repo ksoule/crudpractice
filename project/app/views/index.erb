@@ -1,20 +1,20 @@
 <p>Upcoming workshops</p>
 
-<ul> <% @workshops.each do |x| %>
-    <li><a href="/workshops/<%=x.id%>"><%= x.name %></a>
+<ul> <% @workshops.each do |workshop| %>
+    <li><a href="/workshops/<%=workshop.id%>"><%= workshop.name %></a>
     <%end%></li>
   </ul>
 
   <p> Exercises </p>
 
-<ul> <% @exercises.each do |x| %>
-    <li><a href="/exercises/<%=x.id%>"><%= x.name %></a>
+<ul> <% @exercises.each do |exercise| %>
+    <li><a href="/exercises/<%=exercise.id%>"><%= exercise.name %></a>
     <%end%></li>
   </ul>
 
   <p>Skills</p>
 
-<ul> <% @skills.each do |x| %>
-    <li><a href="/skills/<%=x.id%>"><%= x.name %></a>
+<ul> <% @skills.each do |skill| %>
+    <li><a href="/skills/<%=skill.id%>"><%= skill.name %></a>
     <%end%></li>
   </ul>

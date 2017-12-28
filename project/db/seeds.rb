@@ -37,10 +37,7 @@ skillz.each do |ability|
     name: ability[:name],
     description: ability[:description])
 end
-# Skill.create!(
-#   name: 'group_dynamics',
-#   description: 'Illustrates the different dynamics in play among people working in a group'
-# )
+
 
 Participant.create!(
   size: 'pair',
