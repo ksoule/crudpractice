@@ -1,6 +1,6 @@
 <h3> Group sizes </h3>
 
-<ul> <% @participants.each do |x| %>
-    <li><a href="/participants/<%=x.id%>"><%= x.name %></a>
+<ul> <% @participants.each do |actors| %>
+    <li><a href="/participants/<%=actors.id%>"><%= actors.name %></a>
     <%end%></li>
   </ul>
