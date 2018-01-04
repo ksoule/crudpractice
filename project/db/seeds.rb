@@ -40,8 +40,9 @@ end
 
 
 Participant.create!(
-  size: 'pair',
-  description: 'two participants'
+  size: '2',
+  description: 'divide group into pairs',
+  name: 'pairs'
 )
 
 Exercise.create!(

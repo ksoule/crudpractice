@@ -1,24 +1,24 @@
 <p>Exercise Edits</p>
 <!-- each attribute is separated into it's own text box. Pre-populated with the original text. Skills are dropdowns with radio buttons to select each one it works.-->
 
-<form method="post" action="/exercises/:id<%= @exercise.id %>">
+<form method="post" action="/exercises/<%= @exercise.id %>">
   <input type="hidden" name="_method" value="put" />
   <label for="name">Title:</label>
-  <input id="name" name="name" type="text" placeholder="<%=@exercise.name%>">
+  <input id="name" name="name" type="text" value="<%=@exercise.name%>">
 
   <label for="description">description:</label>
-  <input id="textarea" name="description" type="text" placeholder="<%=@exercise.description%>">
+  <input id="textarea" name="description" type="text" value="<%=@exercise.description%>">
 
   <label for="source">source:</label>
-  <input id="text" name="source" type="text" placeholder="<%=@exercise.source%>">
+  <input id="text" name="source" type="text" value="<%=@exercise.source%>">
 
-  <label for="notes">notes:</label><input id="textarea" name="notes" type="text" placeholder="<%=@exercise.notes%>">
+  <label for="notes">notes:</label><input id="textarea" name="notes" type="text" value="<%=@exercise.notes%>">
 
   <label for="participant_id">participants needed:</label>
     <ul>
-      <% @participants.each do |x| %>
+      <% @participants.each do |group| %>
         <li>
-          <label><%= x.name %></label><input name="participant_id" type="checkbox">
+          <label><%= group.name %></label><input name="participant_id" type="checkbox" value="<%=group.id%>">
         </li>
       <%end%>
       </ul>
@@ -27,7 +27,7 @@
     <ul>
       <% @skills.each do |skill| %>
         <li>
-          <label><%= skill.name %></label><input name="skill_id" type="checkbox">
+          <label><%= skill.name %></label><input name="skill_id[]" type="checkbox" value="<%=skill.id %>"/>
         </li>
       <%end%>
       </ul>

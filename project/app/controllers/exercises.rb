@@ -10,7 +10,7 @@ end
 post '/exercises' do
   # separate the params hash into exercise and skill set
   @exercise = Exercise.create!(params)
-  redirect :"/exercises/:#{@exercise.id}/edit"
+  redirect "/exercises/#{@exercise.id}/edit"
 end
 
 get '/exercises/:id' do
@@ -27,14 +27,19 @@ get '/exercises/:id/edit' do
 end
 
 put '/exercises/:id' do
+  p params
   @exercise = Exercise.find(params[:id])
-  params[:skill_id].each do |skill|
-    Skillset.create!({exercise_id: @exercise.id, skill_id: skill})
-    redirect 'exercises/:id'
+  @exercise.participant_id = params[:participant_id]
+  @exercise.name = params[:name]
+  @exercise.description = params[:description]
+  @exercise.source = params[:source]
+  @exercise.notes = params[:notes]
+
+  params[:skill_id].each do |skill_id|
+    Skillset.create({exercise_id: @exercise.id, skill_id: skill_id})
   end
 
-  @exercise.participants_id = params[:participant_id]
-  redirect '/exercises'
+  redirect "/exercises/#{@exercise.id}"
 end
 
 delete '/exercises/:id' do
