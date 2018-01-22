@@ -1,13 +1,16 @@
 <h3><%= @exercise.name %></h3>
-<h5><a href="/exercises/<%=@exercise.id%>/edit">Edit</a><h5>
+<h2><a href="/exercises/<%=@exercise.id%>/edit">Edit</a></h2>
 
 <ul>
-    <li><%= @exercise.description %></li>
-    <li> <%= @exercise.source %> </li>
-    <li> <%= @exercise.notes %> </li>
+    <h3>Description</h3>
+    <p><%= @exercise.description %></p>
+    <h3>Source</h3>
+    <p> <%= @exercise.source %> </p>
+    <h3>Notes</h3>
+    <p> <%= @exercise.notes %> </p>
 </ul>
 
-<p> Skill sets </p>
+<p><h2> Skill sets </h2></p>
 
 <ul> <% @skills.each do |skill| %>
     <li><a href="/skills/<%=skill.id%>"><%= skill.name %></a>
